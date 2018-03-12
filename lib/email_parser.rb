@@ -9,7 +9,7 @@ class EmailParser
   @@all = []
 
   def parse
-    self.split(", ")
+    data = self.split(", ")
     data.each{|email| @@all << email}
   end
 
