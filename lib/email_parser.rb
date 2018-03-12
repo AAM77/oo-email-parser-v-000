@@ -8,7 +8,7 @@ class EmailParser
 
   @@all = []
 
-  def parse(csv)
+  def parse
     data = csv.split(", ")
     data.each{|email| @@all << email}
   end
