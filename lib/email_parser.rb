@@ -12,6 +12,10 @@ class EmailParser
     @@all << csv
   end
 
+  def self.all
+    @@all
+  end
+
 
 
   def parse
