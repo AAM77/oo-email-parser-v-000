@@ -17,8 +17,6 @@ class EmailParser
     @@all
   end
 
-
-
   def parse
     data = self.all.split(", ")
     data.each{|email| @@all << email}
