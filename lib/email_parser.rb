@@ -3,12 +3,12 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 
-class EmailParser(csv)
+class EmailParser
   attr_accessor :name
 
   @@all = []
 
-  def parse
+  def parse(split)
     data = self.split(", ")
     data.each{|email| @@all << email}
   end
