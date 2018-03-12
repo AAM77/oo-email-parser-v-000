@@ -9,7 +9,7 @@ class EmailParser
   @@all = []
 
   def initialize(csv)
-    @@all << csv
+    @emails = csb
   end
 
   def all
