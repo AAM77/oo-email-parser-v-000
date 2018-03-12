@@ -19,6 +19,7 @@ class EmailParser
   def parse
     data = @emails.split(/,\s*|\s\b/)
     data.each{|email| @@all << email}
+    @@all.uniq
   end
 
 
