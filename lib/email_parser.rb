@@ -10,8 +10,7 @@ class EmailParser
 
   def initialize(csv)
     data = csv.split(", ")
-    data.each do {|email| @@all << email}
-    end
+    data.each{|email| @@all << email}
   end
 
 
