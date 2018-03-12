@@ -12,6 +12,7 @@ class EmailParser
     data = csv.split(", ")
     data.each do {|email| @@all << email}
     end
+  end
 
 
 
